@@ -19,7 +19,7 @@ export function useNetworksRelationship({
   const sourceNetwork = sourceChainProvider.network
   const destinationNetwork = destinationChainProvider.network
   const {
-    isEthereumMainnet: isSourceNetworkEthereum,
+    isEthereumMainnetOrTestnet: isSourceNetworkEthereum,
     isArbitrum: isSourceNetworkArbitrum
   } = isNetwork(sourceNetwork.chainId)
   const { isOrbitChain: isDestinationNetworkOrbitChain } = isNetwork(

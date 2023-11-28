@@ -4,8 +4,9 @@ export function ExternalLink({
   ...props
 }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   if (!href) {
-    return children
+    return <>children</>
   }
+
   return (
     <a target="_blank" href={href} rel="noopener noreferrer" {...props}>
       {children}
